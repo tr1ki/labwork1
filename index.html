@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 32px 24px;
+        }
+        h1, h2, h3 {
+            color: #2d3a4b;
+        }
+        .info {
+            margin-bottom: 24px;
+        }
+        .section-title {
+            color: #4a90e2;
+            margin-bottom: 8px;
+            margin-top: 24px;
+            font-weight: bold;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        .footer {
+            margin-top: 32px;
+            color: #888;
+            font-size: 0.95em;
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background: white;
+            margin-top: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            border: 1px solid #bcd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background: #4a90e2;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background: #f7f9fc;
+        }
+        tr:hover {
+            background: #e6f0fa;
+        }
+        .time {
+            font-weight: bold;
+            background: #eef3fa;
+        }
+        form {
+            margin-top: 24px;
+        }
+        label {
+            display: block;
+            margin-top: 12px;
+        }
+        input[type="text"], input[type="email"], input[type="color"] {
+            margin-top: 4px;
+            padding: 6px;
+            width: 220px;
+        }
+        .photo {
+            width: 120px;
+            border-radius: 50%;
+            margin-bottom: 16px;
+        }
+        .btn {
+            margin-top: 12px;
+            padding: 8px 18px;
+            background: #4a90e2;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #357ab8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Балакарев Сергей Сергеевич</h1>
+        <h2>Учеба: 2 курс AITU (перевёлся с Esil University)</h2>
+        <h3>About Me</h3>
+        <img src="static/ava.jpg" alt="Моё фото" width="400" height="300">
+        <p>
+            Увлекаюсь всяким: играю на электрогитаре, катаюсь на фиксе, люблю программирование.
+        </p>
+        <p>Сегодняшнее настроение: 😎🤙🎮</p>
+
+        <div class="section-title">Мои хобби</div>
+        <ol>
+            <li>Спорт</li>
+            <li>Игры</li>
+            <li>Электроника</li>
+            <li>Программирование</li>
+        </ol>
+
+        <div class="section-title">Мои любимые сайты</div>
+        <ul>
+            <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+            <li><a href="https://habr.com/" target="_blank">Habr</a></li>
+            <li><a href="https://liquipedia.net/apexlegends/Effect" target="_blank">Liquipedia</a></li>
+        </ul>
+
+        <button class="btn">Click Me</button>
+
+        <div class="section-title" id="schedule">Расписание занятий</div>
+        <table>
+            <tr>
+                <th>Время</th>
+                <th>Понедельник</th>
+                <th>Вторник</th>
+                <th>Среда</th>
+                <th>Четверг</th>
+                <th>Пятница</th>
+            </tr>
+            <tr>
+                <td class="time">08:00-08:50</td>
+                <td></td><td></td><td>WEB(learn)</td><td></td><td>Physical Education</td>
+            </tr>
+            <tr>
+                <td class="time">09:00-09:50</td>
+                <td></td><td></td><td>WEB(learn)</td><td>OS(online)</td><td>Physical Education</td>
+            </tr>
+            <tr>
+                <td class="time">10:00-10:50</td>
+                <td>Calculus 1</td><td>OS(online)</td><td></td><td>Calculus 1</td><td></td>
+            </tr>
+            <tr>
+                <td class="time">11:00-11:50</td>
+                <td>Calculus 1</td><td>OS(online)</td><td></td><td>Calculus 1</td><td></td>
+            </tr>
+            <tr>
+                <td class="time">12:00-12:50</td>
+                <td>Discrete Mathematics</td><td></td><td></td><td>Discrete Mathematics</td><td></td>
+            </tr>
+            <tr>
+                <td class="time">13:00-13:50</td>
+                <td>Discrete Mathematics</td><td></td><td></td><td>Discrete Mathematics</td><td></td>
+            </tr>
+            <tr>
+                <td class="time">14:00-14:50</td>
+                <td>Design and Analysis of Algorithms</td><td></td><td></td><td>WEB Tech</td><td></td>
+            </tr>
+            <tr>
+                <td class="time">15:00-15:50</td>
+                <td>Design and Analysis of Algorithms</td><td></td><td></td><td>Software Design</td><td></td>
+            </tr>
+            <tr>
+                <td class="time">16:00-16:50</td>
+                <td>WEB Tech</td><td>Software Design</td><td></td><td>Software Design</td><td></td>
+            </tr>
+            <tr>
+                <td class="time">17:00-17:50</td>
+                <td>WEB Tech</td><td>Software Design</td><td></td><td>Design and Analysis of Algorithms</td><td></td>
+            </tr>
+            <tr>
+                <td class="time">18:00-18:50</td>
+                <td></td><td></td><td>Design and Analysis</td><td></td><td></td>
+            </tr>
+            <tr>
+                <td class="time">19:00-19:50</td>
+                <td>Software Design</td><td></td><td>Design and Analysis</td><td></td><td></td>
+            </tr>
+            <tr>
+                <td class="time">20:00-20:50</td>
+                <td></td><td></td><td>OS(learn)</td><td></td><td></td>
+            </tr>
+            <tr>
+                <td class="time">21:00-21:50</td>
+                <td></td><td></td><td>OS(learn)</td><td></td><td></td>
+            </tr>
+        </table>
+
+        <div class="section-title" id="contact">Связаться со мной</div>
+        <form action="/submit" method="post">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="color">Любимый цвет:</label>
+            <input type="color" id="color" name="color">
+            <br>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+
+        <div class="footer">
+            &copy; 2025 Балакарев Сергей Сергеевич
+        </div>
+    </div>
+</body>
+</html>
